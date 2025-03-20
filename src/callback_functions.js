@@ -21,3 +21,14 @@ function discountHalf(num) {//function that returns half of the number
   }
     console.log(orderCost(100, discountHalf))// prints 50
     console.log(orderCost(100, discountNone))// prints 100
+
+const numbers = [4, 9, 16, 25]
+const sqrtNumbers = []
+
+for (let i = 0; i < numbers.length; i++) {
+    sqrtNumbers.push(Math.sqrt(numbers[i]))
+}
+console.log(sqrtNumbers)// prints [ 2, 3, 4, 5 ]
+// The code above can be simplified using the map method
+const sqrtNumbers2 = numbers.map(Math.sqrt)
+console.log(sqrtNumbers2)// prints [ 2, 3, 4, 5 ]
