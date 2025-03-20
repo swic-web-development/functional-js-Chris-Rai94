@@ -39,3 +39,8 @@ const smallNumbers = numbers.filter(smallNum); //[1, 5, 23, 2, 7]
 
 const words = ['Apple', 'Pineapple', 'Kiwi', 'Banana']
 
+function filterItems(arr, query) {
+  return arr.filter((el) => el.toLowerCase().includes(query.toLowerCase()));
+}
+console.log(filterItems(fruits, "ap")); // ['Apple', 'Pineapple]
+console.log(filterItems(fruits, "ki")); // ['Kiwi']
