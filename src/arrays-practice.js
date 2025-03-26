@@ -100,4 +100,8 @@ console.log(monsterNames);
 const monstersWithHighHealth = monsters.filter((monster) => monster.health > 150);
 console.log(monstersWithHighHealth);
 
+const totalHealth = monsters.reduce((total, monster) => total + monster.health, 0);
+console.log(totalHealth);
+
+
 
