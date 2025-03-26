@@ -20,3 +20,13 @@ const totalFrags = players.reduce((total, player) => {
     return total + player.frags;
 }, 0);
 console.log(totalFrags);
+
+// find method
+
+const firstPlayerWithMoreFragsThanDeaths = players.find((player) => {
+    return player.frags > player.deaths;
+});
+console.log(firstPlayerWithMoreFragsThanDeaths);//This reminds me of the break method in loops.
+
+
+
