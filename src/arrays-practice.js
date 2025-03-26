@@ -97,4 +97,7 @@ const monsters = [
 const monsterNames = monsters.map((monster) => monster.name);
 console.log(monsterNames);
 
+const monstersWithHighHealth = monsters.filter((monster) => monster.health > 150);
+console.log(monstersWithHighHealth);
+
 
