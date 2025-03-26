@@ -1,3 +1,4 @@
+// filter method
 const players = [
     { name: 'DoomGuy', frags: 25, deaths: 0 },
     { name: 'Slayer', frags: 25, deaths: 1 },
@@ -12,3 +13,10 @@ const playersWithMoreFragsThanDeaths = players.filter((player) => {
 })
 
 console.log(playersWithMoreFragsThanDeaths);
+
+// reduce method
+
+const totalFrags = players.reduce((total, player) => {
+    return total + player.frags;
+}, 0);
+console.log(totalFrags);
