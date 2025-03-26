@@ -30,6 +30,11 @@ console.log(firstPlayerWithMoreFragsThanDeaths);//This reminds me of the break m
 
 //some method
 const hasFrags = players.some((player) => player.frags)
-console.log(hasFrags);
+console.log(hasFrags); /*It is hard to wrap my mind around implicit coercion.
+I am not used to it as most code I have written needed everything to be spelled out.*/
+
+//every method
+const allPlayersHaveMoreFragsThanDeaths = players.every((player) => player.frags > player.deaths);
+console.log(allPlayersHaveMoreFragsThanDeaths);
 
 
