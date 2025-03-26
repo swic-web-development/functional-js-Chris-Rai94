@@ -103,5 +103,8 @@ console.log(monstersWithHighHealth);
 const totalHealth = monsters.reduce((total, monster) => total + monster.health, 0);
 console.log(totalHealth);
 
+const sortedMonstersByDamage = monsters.sort((a, b) => b.damage - a.damage);
+console.log(sortedMonstersByDamage);
+
 
 
