@@ -28,5 +28,8 @@ const firstPlayerWithMoreFragsThanDeaths = players.find((player) => {
 });
 console.log(firstPlayerWithMoreFragsThanDeaths);//This reminds me of the break method in loops.
 
+//some method
+const hasFrags = players.some((player) => player.frags)
+console.log(hasFrags);
 
 
