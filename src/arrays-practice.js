@@ -48,11 +48,53 @@ const backpackFullOfAmmo = [
     { item: 'energy cell units', quantity: 20, priceEa: 0.2 },
   ];
 
-const totalValue = backpackFullOfAmmo.reduce((total, ammo) => {
+const totalValue = backpackFullOfAmmo.reduce((total, ammo) => {//Creates the total value of the ammo in the backpack.
     return total + ammo.quantity * ammo.priceEa;
 }, 0);
-console.log(totalValue);
+console.log(totalValue);//Display the total value of the ammo in the backpack.
 
+const monsters = [
+    // Deals 10-60 damage per bite
+    { name: 'Cacodemon', health: 400, damage: 35 },
+    
+    // Deals 15-75 damage per claw/fireball
+    { name: 'Baron of Hell', health: 1000, damage: 45 },
+    
+    // Deals 20-200 damage per rocket
+    { name: 'Cyberdemon', health: 4000, damage: 125 },
+    
+    // Deals 5-50 damage per bite
+    { name: 'Hell Knight', health: 800, damage: 25 },
+    
+    // Deals 10-100 damage per bite
+    { name: 'Imp', health: 200, damage: 20 },
+    
+    // Deals 5-25 damage per bite
+    { name: 'Lost Soul', health: 100, damage: 10 },
+    
+    // Deals 5-50 damage per bite
+    { name: 'Pinky', health: 300, damage: 15 },
+    
+    // Deals 10-100 damage per bite
+    { name: 'Revenant', health: 500, damage: 30 },
+    
+    // Deals 5-50 damage per bite
+    { name: 'Spectre', health: 200, damage: 20 },
+    
+    // Deals 5-50 damage per bite
+    { name: 'Spider Mastermind', health: 2000, damage: 50 },
+    
+    // Deals 5-50 damage per bite
+    { name: 'Vile', health: 1000, damage: 40 },
+    
+    // Deals 5-50 damage per bite
+    { name: 'Zombie', health: 100, damage: 5 },
+    
+    // Deals 5-50 damage per bite
+    { name: 'Zombieman', health: 200, damage: 10 },
+  ];
 
+const monsterNames = monsters.map((monster) => monster.name);
+console.log(monsterNames);
 
 
