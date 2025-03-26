@@ -37,4 +37,8 @@ I am not used to it as most code I have written needed everything to be spelled 
 const allPlayersHaveMoreFragsThanDeaths = players.every((player) => player.frags > player.deaths);
 console.log(allPlayersHaveMoreFragsThanDeaths);
 
+//sort method
+const sortedPlayers = players.sort((a, b) => b.frags - a.frags);
+console.log(sortedPlayers);
+
 
